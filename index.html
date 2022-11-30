@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="Imagem de uma Agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <h2 id="username">Nome do Usuário</h2>
+        <div class="barra"></div>
+        <form id="form-agenda">
+            <label for="contactName">
+                Nome:
+                <input id="contactName" type="text" placeholder="Nome do Contato" required />
+            </label>
+            <label for="contactNumber">
+                Telefone:
+                <input id="contactNumber" type="tel" placeholder="Tel com DDD" minlength="11" maxlength="11" required/>
+            </label>
+            <button type="submit">CADASTRAR +</button>
+        </form>
+        <div class="barra"></div>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>TELEFONE</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
